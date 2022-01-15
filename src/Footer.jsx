@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer>
-      <p>@TimeApp</p>
+      <p>Copyright &copy; 2022 TheTimeAppCompany</p>
     </footer>
   );
 }
