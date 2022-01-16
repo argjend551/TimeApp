@@ -1,82 +1,102 @@
 [
   {
     "city": "Stockholm",
-    "timezone": 1
+    "timezone": 1,
+    "image": "https://source.unsplash.com/random/640x360?Stockholm"
   },
   {
     "city": "London",
-    "timezone": 0
+    "timezone": 0,
+    "image": "https://source.unsplash.com/random/640x360?London"
   },
   {
     "city": "Dubai",
-    "timezone": 4
+    "timezone": 4,
+    "image": "https://source.unsplash.com/random/640x360?Dubai"
   },
   {
     "city": "New Delhi",
-    "timezone": 5.5
+    "timezone": 5.5,
+    "image": "https://source.unsplash.com/random/640x360?New Delhi"
   },
   {
     "city": "Seoul",
-    "timezone": 9
+    "timezone": 9,
+    "image": "https://source.unsplash.com/random/640x360?Seoul"
   },
   {
     "city": "Sydney",
-    "timezone": 11
+    "timezone": 11,
+    "image": "https://source.unsplash.com/random/640x360?Sydney"
   },
   {
     "city": "Madrid",
-    "timezone": 1
+    "timezone": 1,
+    "image": "https://source.unsplash.com/random/640x360?Madrid"
   },
   {
     "city": "Rome",
-    "timezone": 1
+    "timezone": 1,
+    "image": "https://source.unsplash.com/random/640x360?Rome"
   },
   {
     "city": "Rio De Janeiro",
-    "timezone": -3
+    "timezone": -3,
+    "image": "https://source.unsplash.com/random/640x360?Rio De Janeiro"
   },
   {
     "city": "San francisco",
-    "timezone": -8
+    "timezone": -8,
+    "image": "https://source.unsplash.com/random/640x360?San francisco"
   },
   {
     "city": "New York",
-    "timezone": -5
+    "timezone": -5,
+    "image": "https://source.unsplash.com/random/640x360?New York"
   },
   {
     "city": "Tokyo",
-    "timezone": 9
+    "timezone": 9,
+    "image": "https://source.unsplash.com/random/640x360?Tokyo"
   },
   {
     "city": "Istanbul",
-    "timezone": 3
+    "timezone": 3,
+    "image": "https://source.unsplash.com/random/640x360?Istanbul"
   },
   {
     "city": "Beijing",
-    "timezone": 8
+    "timezone": 8,
+    "image": "https://source.unsplash.com/random/640x360?Beijing"
   },
   {
     "city": "Mexico City",
-    "timezone": -6
+    "timezone": -6,
+    "image": "https://source.unsplash.com/random/640x360?Mexico City"
   },
   {
     "city": "Cairo",
-    "timezone": 2
+    "timezone": 2,
+    "image": "https://source.unsplash.com/random/640x360?Cairo"
   },
   {
     "city": "Manila",
-    "timezone": 8
+    "timezone": 8,
+    "image": "https://source.unsplash.com/random/640x360?Manila"
   },
   {
     "city": "Moscow",
-    "timezone": 3
+    "timezone": 3,
+    "image": "https://source.unsplash.com/random/640x360?Moscow"
   },
   {
     "city": "Cape Town",
-    "timezone": 2
+    "timezone": 2,
+    "image": "https://source.unsplash.com/random/640x360?Cape Town"
   },
   {
     "city": "Tirana",
-    "timezone": 1
+    "timezone": 1,
+    "image": "https://source.unsplash.com/random/640x360?Tirana"
   }
 ]
