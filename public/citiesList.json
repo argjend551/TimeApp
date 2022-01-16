@@ -1,0 +1,82 @@
+[
+  {
+    "city": "Stockholm",
+    "timezone": 1
+  },
+  {
+    "city": "London",
+    "timezone": 0
+  },
+  {
+    "city": "Dubai",
+    "timezone": 4
+  },
+  {
+    "city": "New Delhi",
+    "timezone": 5.5
+  },
+  {
+    "city": "Seoul",
+    "timezone": 9
+  },
+  {
+    "city": "Sydney",
+    "timezone": 11
+  },
+  {
+    "city": "Madrid",
+    "timezone": 1
+  },
+  {
+    "city": "Rome",
+    "timezone": 1
+  },
+  {
+    "city": "Rio De Janeiro",
+    "timezone": -3
+  },
+  {
+    "city": "San francisco",
+    "timezone": -8
+  },
+  {
+    "city": "New York",
+    "timezone": -5
+  },
+  {
+    "city": "Tokyo",
+    "timezone": 9
+  },
+  {
+    "city": "Istanbul",
+    "timezone": 3
+  },
+  {
+    "city": "Beijing",
+    "timezone": 8
+  },
+  {
+    "city": "Mexico City",
+    "timezone": -6
+  },
+  {
+    "city": "Cairo",
+    "timezone": 2
+  },
+  {
+    "city": "Manila",
+    "timezone": 8
+  },
+  {
+    "city": "Moscow",
+    "timezone": 3
+  },
+  {
+    "city": "Cape Town",
+    "timezone": 2
+  },
+  {
+    "city": "Tirana",
+    "timezone": 1
+  }
+]
