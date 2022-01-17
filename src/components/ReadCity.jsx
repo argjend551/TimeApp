@@ -1,5 +1,8 @@
 import GetLocalTime from "./GetLocalTime";
 import { useState } from "react";
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+
 function ReadCity(props) {
 
   let { town } = props;
@@ -10,11 +13,16 @@ function ReadCity(props) {
 
 
   return (
-    <div className="city">
-      <img src={image} />
-      <h3>{city}</h3>
-      <GetLocalTime offset={timezone} settime={settime} />
-    </div>
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src={image} />
+      <Card.Body>
+        <Card.Title>{city}</Card.Title>
+        <Card.Text>
+          <GetLocalTime offset={timezone} settime={settime} />
+        </Card.Text>
+        <Button variant="primary">More Info</Button>
+      </Card.Body>
+    </Card>
   );
 }
 
