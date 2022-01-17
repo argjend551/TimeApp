@@ -1,9 +1,10 @@
 import React from "react";
+import ReadCityList from "../components/ReadCityList";
 
 function Home() {
   return (
     <div>
-      <h1>HomePage hej</h1>
+      <ReadCityList />
     </div>
   );
 }
