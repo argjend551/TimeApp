@@ -3,7 +3,7 @@
     "id": 1,
     "city": "Stockholm",
     "timezone": 1,
-    "image": "https://source.unsplash.com/random/640x360?Stockholm"
+    "image": "images/citycards/stockholmcard.jpg"
   },
   {
     "id": 2,
