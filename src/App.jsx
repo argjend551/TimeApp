@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Header from "./Header";
 import Favorites from "./pages/Favorites";
 import Footer from "./Footer";
+import ReadCityList from "./components/ReadCityList";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/favorites" element={<Favorites />} />
       </Routes>
+      <ReadCityList />
       <Footer />
     </BrowserRouter>
   );

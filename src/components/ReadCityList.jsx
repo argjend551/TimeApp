@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import ReadCity from "./ReadCity";
 
 function ReadCityList() {
 
@@ -13,7 +14,7 @@ function ReadCityList() {
 
   return <div className="citiesList-div">
 
-    {console.log(cities)};
+    {cities.map(town => <ReadCity key={town.id}{...{ town }} />)}
 
   </div>
 }
