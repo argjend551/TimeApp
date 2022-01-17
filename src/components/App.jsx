@@ -5,17 +5,16 @@ import Header from "./Header";
 import Favorites from "../pages/Favorites";
 import Footer from "./Footer";
 
-
 function App() {
   return (
     <BrowserRouter>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-      <Routes>
-        <Route path="/favorites" element={<Favorites />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/favorites" element={<Favorites />} />
+        </Routes>
+      </main>
       <Footer />
     </BrowserRouter>
   );
