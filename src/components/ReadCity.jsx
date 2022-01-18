@@ -1,19 +1,15 @@
 import GetLocalTime from "./GetLocalTime";
 import { useState } from "react";
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
 
 function ReadCity(props) {
-
   let { town } = props;
-  let { id, city, timezone, image } = town;
+  let { id, city, timezone, image, imageBgr } = town;
   const [time, settime] = useState();
 
-
-
-
   return (
-    <Card style={{ width: '18rem' }}>
+    <Card style={{ width: "18rem" }}>
       <Card.Img variant="top" src={image} />
       <Card.Body>
         <Card.Title>{city}</Card.Title>
