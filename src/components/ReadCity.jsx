@@ -1,13 +1,12 @@
 import GetLocalTime from "./GetLocalTime";
 import { useState } from "react";
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import Col from "react-bootstrap/Col";
 
 function ReadCity(props) {
-
   let { town } = props;
-  let { id, city, timezone, image } = town;
+  let { id, city, timezone, image, imageBgr } = town;
   const [time, settime] = useState();
 
 
