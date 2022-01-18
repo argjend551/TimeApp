@@ -21,9 +21,8 @@ export default function Header() {
               className="d-inline-block align-top"
             />{" "}
             TimeApp
-
           </Navbar.Brand>
-          <Button href="/favorites">My Timezones</Button>
+          <Button href="/MyTimezones">My Timezones</Button>
         </Container>
       </Navbar>
     </>
