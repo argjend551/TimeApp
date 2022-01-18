@@ -11,7 +11,7 @@ function ReadCity(props) {
 
 
   return (
-    <Col lg={3} md={6} sm={12}>
+    <Col>
       <Card className="city-card" style={{ width: '18rem' }}>
         <Card.Img variant="top" src={image} />
         <Card.Body>
