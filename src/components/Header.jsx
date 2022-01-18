@@ -20,15 +20,9 @@ export default function Header() {
               className="d-inline-block align-top"
             />{" "}
             TimeApp
-              <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/favorites">Favorites</Link>
-              </li>
-            </ul>
+
           </Navbar.Brand>
+          <Button href="/favorites">Favorites</Button>
         </Container>
       </Navbar>
     </>
