@@ -6,6 +6,10 @@
   border-radius: 20px !important;
 }
 
+.city-card button{
+  margin-top: 5px;
+}
+
 .city-card img{
   height: 39vh;
   border-top-left-radius: 20px;
