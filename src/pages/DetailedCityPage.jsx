@@ -1,16 +1,24 @@
+import { useLocation } from "react-router-dom";
 import React from "react";
+import GetLocalTime from "../components/GetLocalTime";
+import { useState } from "react";
 
 function DetailedCityPage() {
+  const { state } = useLocation();
+  const { town } = state;
+  const { id, city, timezone, image, imageBgr } = town;
+  const [time, settime] = useState();
+
   return (
     <div
       className="cityBackgroundImg"
       style={{
-        backgroundImage: "url(images/citybackground/beijingbackground.jpg)",
+        backgroundImage: `url(${imageBgr})`,
       }}
     >
-      <h1>Detailed City Page</h1>
+      <h1>{city}</h1>
       <h2>Analog Clock</h2>
-      <h2>Digital Clock</h2>
+      <GetLocalTime offset={timezone} settime={settime} />
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic facere
         perferendis, illo eius in repellat tenetur fugiat, quod vero, cupiditate
