@@ -1,4 +1,5 @@
 import useStates from "./useStates";
+import Button from "react-bootstrap/Button";
 function MyForm(props) {
   let { addCity, add } = props;
 
@@ -43,7 +44,7 @@ function MyForm(props) {
           required
           maxLength={2}
         />
-        <input type="submit" value="Add" />
+        <Button type="submit" value="Add">Add </Button>
       </form>
     </div>
   );
