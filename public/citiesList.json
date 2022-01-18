@@ -3,140 +3,120 @@
     "id": 1,
     "city": "Stockholm",
     "timezone": 1,
-    "image": "images/citycards/stockholmcard.jpg",
-    "imageBgr": "images/citybackground/stockholmbackground.jpg"
+    "image": "images/citycards/stockholmcard.jpg"
   },
   {
     "id": 2,
     "city": "London",
     "timezone": 0,
-    "image": "images/citycards/londoncard.jpg",
-    "imageBgr": "images/citybackground/londonbackground.jpg"
+    "image": "images/citycards/londoncard.jpg"
   },
   {
     "id": 3,
     "city": "Dubai",
     "timezone": 4,
-    "image": "images/citycards/dubaicard.jpg",
-    "imageBgr": "images/citybackground/dubaibackground.jpg"
+    "image": "images/citycards/dubaicard.jpg"
   },
   {
     "id": 4,
     "city": "New Delhi",
     "timezone": 5.5,
-    "image": "images/citycards/newdelhicard.jpg",
-    "imageBgr": "images/citybackground/newdehlibackground.jpg"
+    "image": "images/citycards/newdelhicard.jpg"
   },
   {
     "id": 5,
     "city": "Seoul",
     "timezone": 9,
-    "image": "images/citycards/seoulcard.jpg",
-    "imageBgr": "images/citybackground/Seoulbackground.jpg"
+    "image": "images/citycards/seoulcard.jpg"
   },
   {
     "id": 6,
     "city": "Sydney",
     "timezone": 11,
-    "image": "images/citycards/sydneycard.jpg",
-    "imageBgr": "images/citybackground/sydneybackground.jpg"
+    "image": "images/citycards/sydneycard.jpg"
   },
   {
     "id": 7,
     "city": "Madrid",
     "timezone": 1,
-    "image": "images/citycards/madridcard.jpg",
-    "imageBgr": "images/citybackground/madridbackground.jpg"
+    "image": "images/citycards/madridcard.jpg"
   },
   {
     "id": 8,
     "city": "Rome",
     "timezone": 1,
-    "image": "images/citycards/romecard.jpg",
-    "imageBgr": "images/citybackground/romebackground.jpg"
+    "image": "images/citycards/romecard.jpg"
   },
   {
     "id": 9,
     "city": "Rio De Janeiro",
     "timezone": -3,
-    "image": "images/citycards/riodejaneirocard.jpg",
-    "imageBgr": "images/citybackground/riodejaneirobackground.jpg"
+    "image": "images/citycards/riodejaneirocard.jpg"
   },
   {
     "id": 10,
     "city": "San francisco",
     "timezone": -8,
-    "image": "images/citycards/sanfranciscocard.jpg",
-    "imageBgr": "images/citybackground/sanfranciscobackground.jpg"
+    "image": "images/citycards/sanfranciscocard.jpg"
   },
   {
     "id": 11,
     "city": "New York",
     "timezone": -5,
-    "image": "images/citycards/newyorkcard.jpg",
-    "imageBgr": "images/citybackground/newyorkbackground.jpg"
+    "image": "images/citycards/newyorkcard.jpg"
   },
   {
     "id": 12,
     "city": "Tokyo",
     "timezone": 9,
-    "image": "images/citycards/tokyocard.jpg",
-    "imageBgr": "images/citybackground/tokyobackground.jpg"
+    "image": "images/citycards/tokyocard.jpg"
   },
   {
     "id": 13,
     "city": "Istanbul",
     "timezone": 3,
-    "image": "images/citycards/istanbulcard.jpg",
-    "imageBgr": "images/citybackground/istanbulbackground.jpg"
+    "image": "images/citycards/istanbulcard.jpg"
   },
   {
     "id": 14,
     "city": "Beijing",
     "timezone": 8,
-    "image": "images/citycards/beijingcard.jpg",
-    "imageBgr": "images/citybackground/beijingbackground.jpg"
+    "image": "images/citycards/beijingcard.jpg"
   },
   {
     "id": 15,
     "city": "Mexico City",
     "timezone": -6,
-    "image": "images/citycards/mexicocitycard.jpg",
-    "imageBgr": "images/citybackground/mexicocitybackground.jpg"
+    "image": "images/citycards/mexicocitycard.jpg"
   },
   {
     "id": 16,
     "city": "Cairo",
     "timezone": 2,
-    "image": "images/citycards/cairocard.jpg",
-    "imageBgr": "images/citybackground/cairobackground.jpg"
+    "image": "images/citycards/cairocard.jpg"
   },
   {
     "id": 17,
     "city": "Manila",
     "timezone": 8,
-    "image": "images/citycards/manilacard.jpg",
-    "imageBgr": "images/citybackground/manilabackground.jpg"
+    "image": "images/citycards/manilacard.jpg"
   },
   {
     "id": 18,
     "city": "Moscow",
     "timezone": 3,
-    "image": "images/citycards/moscowcard.jpg",
-    "imageBgr": "images/citybackground/moscowbackground.jpg"
+    "image": "images/citycards/moscowcard.jpg"
   },
   {
     "id": 19,
     "city": "Cape Town",
     "timezone": 2,
-    "image": "images/citycards/capetowncard.jpg",
-    "imageBgr": "images/citybackground/capetownbackground.jpg"
+    "image": "images/citycards/capetowncard.jpg"
   },
   {
     "id": 20,
     "city": "Tirana",
     "timezone": 1,
-    "image": "images/citycards/tiranacard.jpg",
-    "imageBgr": "images/citybackground/tiranabackground.jpg"
+    "image": "images/citycards/tiranacard.jpg"
   }
 ]

@@ -9,9 +9,10 @@ function ReadCity(props) {
   let { id, city, timezone, image, imageBgr } = town;
   const [time, settime] = useState();
 
+
   return (
-    <Col l={3} s={12}>
-      <Card style={{ width: "18rem" }}>
+    <Col lg={3} md={6} sm={12}>
+      <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src={image} />
         <Card.Body>
           <Card.Title>{city}</Card.Title>
