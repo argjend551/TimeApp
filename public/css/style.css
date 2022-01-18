@@ -34,28 +34,28 @@ li:hover {
 main {
   flex: 1;
 }
-<<<<<<< HEAD:public/style.css
-.favoriteSite{
+
+.favoriteSite {
   margin: 1rem;
   padding: 2rem 2rem;
   text-align: center;
 }
-.form input{
-width: 150px;
-display: block;
-margin-bottom: 20px;
-height: 30px;
-font-size: 20px;
-margin-left: 30px;
+.form input {
+  width: 150px;
+  display: block;
+  margin-bottom: 20px;
+  height: 30px;
+  font-size: 20px;
+  margin-left: 30px;
 }
-.form{
+.form {
   display: inline-block;
   margin-top: 6%;
 }
-.favoriteCity{
+.favoriteCity {
   color: white;
 }
-.favoriteList{
+.favoriteList {
   display: inline-block;
   margin-top: 4%;
   width: 400px;
@@ -64,12 +64,11 @@ margin-left: 30px;
   vertical-align: middle;
   margin-left: 5%;
   border: 1px solid black;
- overflow-y: scroll;
-=======
+  overflow-y: scroll;
+}
 
 .cityBackgroundImg {
   height: 100%;
->>>>>>> 660345613c291bc34c98e3ed065639be49ee5389:public/css/style.css
 }
 
 #root {
