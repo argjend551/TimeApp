@@ -1,0 +1,8 @@
+.city-card{
+  font-family: 'Merriweather';
+  margin-bottom: 15px;
+}
+
+.city-card img{
+  height: 40vh;
+}
