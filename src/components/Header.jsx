@@ -21,7 +21,6 @@ export default function Header() {
             />{" "}
             TimeApp
 
-
           </Navbar.Brand>
           <Button href="/favorites">Favorites</Button>
         </Container>
