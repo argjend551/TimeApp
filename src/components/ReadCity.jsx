@@ -11,10 +11,8 @@ function ReadCity(props) {
   const [time, settime] = useState();
 
 
-
-
   return (
-    <Col l={3} s={12}>
+    <Col lg={3} md={6} sm={12}>
       <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src={image} />
         <Card.Body>
