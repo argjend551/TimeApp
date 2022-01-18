@@ -19,7 +19,7 @@ function GetLocalTime(props) {
   // inteval every second, updates the time.
   setInterval(() => {
     settime(localtime);
-  }, 1000);
+  }, 800);
 
   return (
     <>

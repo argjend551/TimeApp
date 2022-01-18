@@ -1,9 +1,13 @@
 import React from "react";
-
+import AddCity from "../components/AddCity";
+import FavoriteList from "../components/FavoriteList";
 function Favorites() {
   return (
-    <div>
-      <h1>My Favorite</h1>
+    <div className="favoriteSite">
+      <h1>Add a timezone</h1>
+      <AddCity></AddCity>
+
+      <FavoriteList></FavoriteList>
     </div>
   );
 }
