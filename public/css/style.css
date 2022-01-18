@@ -1,6 +1,6 @@
-@import url('cards.css');
+@import url("cards.css");
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
 
 ul {
   list-style-type: none;
@@ -34,6 +34,11 @@ li:hover {
 main {
   flex: 1;
 }
+
+.cityBackgroundImg {
+  height: 100%;
+}
+
 #root {
   display: flex;
   min-height: 100vh;
