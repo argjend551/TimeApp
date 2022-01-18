@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import ReadCity from "./ReadCity";
+import Row from 'react-bootstrap/Row'
 
 function ReadCityList() {
 
@@ -11,12 +12,11 @@ function ReadCityList() {
   }, [])
 
 
-
-  return <div className="citiesList-div">
+  return <Row>
 
     {cities.map(town => <ReadCity key={town.id}{...{ town }} />)}
 
-  </div>
+  </Row>
 }
 
 export default ReadCityList;

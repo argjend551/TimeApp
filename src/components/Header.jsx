@@ -6,6 +6,7 @@ import { Container } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
+
 export default function Header() {
   return (
     <>
@@ -22,7 +23,7 @@ export default function Header() {
             TimeApp
 
           </Navbar.Brand>
-          <Button href="/favorites">Favorites</Button>
+          <Button href="/favorites">My Timezones</Button>
         </Container>
       </Navbar>
     </>

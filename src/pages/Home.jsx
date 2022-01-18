@@ -5,14 +5,12 @@ import Container from 'react-bootstrap/Container'
 
 function Home() {
   return (
-    <div>
-      <Container align="center" fluid className="card-container">
-        <Row></Row>
-        <Row>
-          <ReadCityList />
-        </Row>
-      </Container>
-    </div>
+    <Container align="center" className="card-container">
+      <Row>
+        KLOCKA
+      </Row>
+      <ReadCityList />
+    </Container>
   );
 }
 
