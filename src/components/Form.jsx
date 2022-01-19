@@ -1,5 +1,6 @@
 import useStates from "./useStates";
 import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
 function MyForm(props) {
   let { addCity, add } = props;
 
@@ -24,27 +25,34 @@ function MyForm(props) {
   return (
     <div className="form">
       <form onSubmit={submitForm}>
-        <input
-          type="text"
-          name="city"
-          value={city}
-          onChange={updateFormValue}
-          placeholder="Enter a City"
-          required
-          maxLength={15}
-        />
-        <input
-          type="number"
-          name="utc"
-          placeholder="Enter UTC"
-          max="24"
-          min="-24"
-          value={utc}
-          onChange={updateFormValue}
-          required
-          maxLength={2}
-        />
-        <Button type="submit" value="Add">Add </Button>
+        <Form.Group className="mb-3">
+          <Form.Control
+            type="text"
+            name="city"
+            value={city}
+            onChange={updateFormValue}
+            placeholder="Enter a City"
+            required
+            minLength={2}
+            maxLength={15}
+          />
+        </Form.Group>
+        <Form.Group className="mb-3">
+          <Form.Control
+            type="number"
+            name="utc"
+            placeholder="Enter UTC"
+            max="24"
+            min="-24"
+            value={utc}
+            onChange={updateFormValue}
+            required
+            maxLength={2}
+          />
+        </Form.Group>
+        <Button type="submit" value="Add">
+          Add{" "}
+        </Button>
       </form>
     </div>
   );
