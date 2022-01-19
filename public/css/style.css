@@ -19,6 +19,7 @@ main {
   height: 30px;
   font-size: 20px;
   margin-left: 30px;
+  font-family: 'Merriweather';
 }
 .form {
   display: inline-block;
@@ -26,11 +27,13 @@ main {
 }
 .favoriteCity {
   color: white;
+  font-family: 'Merriweather';
 }
+
 .favoriteList {
   display: inline-block;
   margin-top: 4%;
-  width: 400px;
+  width: clamp(200px,100%,400px);
   height: 400px;
   padding: 0.5rem 0.5rem;
   vertical-align: middle;
