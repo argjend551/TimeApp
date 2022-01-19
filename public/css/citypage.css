@@ -1,0 +1,24 @@
+.cityBackgroundImg {
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+  text-align: center;
+}
+.aboutCity {
+  width: 25%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.titleAboutCity {
+  margin-top: 50px;
+}
+
+.citypagecontent {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.cityName {
+  margin-top: 20px;
+}

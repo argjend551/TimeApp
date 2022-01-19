@@ -1,4 +1,5 @@
 @import url("cards.css");
+@import url("citypage.css");
 
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
 
@@ -34,12 +35,8 @@ main {
   padding: 0.5rem 0.5rem;
   vertical-align: middle;
   margin-left: 5%;
-  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   overflow-y: scroll;
-}
-
-.cityBackgroundImg {
-  height: 100%;
 }
 
 #root {
@@ -52,5 +49,5 @@ footer {
   background-color: #083c5d;
   color: white;
   text-align: center;
-  padding: 60px 0 20px 0;
+  padding: 50px 0 20px 0;
 }
