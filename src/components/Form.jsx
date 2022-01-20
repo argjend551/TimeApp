@@ -1,5 +1,8 @@
 import useStates from "./useStates";
 import Button from "react-bootstrap/Button";
+import store from "../js/localStore";
+import PresistantData from "../components/PresistantData";
+
 function MyForm(props) {
   let { addCity, add } = props;
 
@@ -17,6 +20,34 @@ function MyForm(props) {
     // prevent the default behavior of
     // the browser (don't reload on submit)
     event.preventDefault();
+
+
+    // Detta är det jag menar med lite oproffsigt // Tim 
+    // Kanske är bara jag som fjantar mej.
+    if (store.list != null) {
+      const data = JSON.stringify(store.list);
+      var items = JSON.parse(data);
+
+      // dunno why id becomes 79.
+      items.push({ "id": data.length, "city": formValues.city, "timezone": formValues.utc, "image": "none.", "imageBgr": "None" });
+
+      console.log(items);
+
+      store.list = items;
+      store.save();
+
+      console.log("Saved localstoragee MULTIPLE");
+    }
+    else {
+      const nItem = [{ "id": "1", "city": formValues.city, "timezone": formValues.utc, "image": "none.", "imageBgr": "None" }];
+
+      store.list = nItem;
+      store.save();
+
+      console.log("Saved localstoragee SINGLE");
+    }
+
+
     addCity([...add, formValues]);
   }
 

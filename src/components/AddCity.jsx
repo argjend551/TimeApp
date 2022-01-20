@@ -1,6 +1,8 @@
 import { useState } from "react";
 import MyForm from "./Form";
 import FavoriteList from "./FavoriteList";
+import PresistantData from "../components/PresistantData";
+
 function AddCity() {
   const [add, addCity] = useState([]);
 
@@ -8,15 +10,8 @@ function AddCity() {
     <>
       <MyForm addCity={addCity} add={add}></MyForm>
       <div className="favoriteList">
-        {add.map(({ city, utc, index }) => (
-          <FavoriteList
-            key={index}
-            {...{
-              city,
-              utc,
-            }}
-          />
-        ))}
+
+        <PresistantData />
       </div>
     </>
   );
