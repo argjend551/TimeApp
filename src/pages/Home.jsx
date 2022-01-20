@@ -2,12 +2,13 @@ import React from "react";
 import ReadCityList from "../components/ReadCityList";
 import Row from 'react-bootstrap/Row'
 import Container from 'react-bootstrap/Container'
+import Clock from "../components/Clock"
 
 function Home() {
   return (
     <Container align="center" className="card-container">
       <Row>
-        KLOCKA
+        <Clock />
       </Row>
       <ReadCityList />
     </Container>
