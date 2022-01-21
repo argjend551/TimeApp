@@ -10,6 +10,7 @@
 .city-card button{
   margin-top: 5px;
   background-color: rgb(8, 60, 93);
+  border-color: rgb(8, 60, 93);
 }
 
 .city-card img{
