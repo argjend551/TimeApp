@@ -12,6 +12,14 @@ main {
   background-color: rgb(8, 60, 93)
 }
 
+/* Jag måste säga att det ser inte så bra ut haha , men det kan vi ändra - jag tycker det ser bäst ut med 
+default blå färgen .dvs om man bara tar bort den här css stylingen för header knappen.  /Tim
+
+.color-nav .custom-btn {
+  background-color: rgb(48, 65, 93);
+}
+*/
+
 .favoriteSite {
   margin: 1rem;
   padding: 2rem 2rem;
