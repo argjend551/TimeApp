@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 function GetLocalTime(props) {
   let { offset, settime } = props;
   // create Date object for current location
@@ -28,9 +29,9 @@ function GetLocalTime(props) {
   let localtime = hours + ":" + minutes + ":" + seconds;
 
   // inteval every second, updates the time.
-  setInterval(() => {
-    settime(localtime);
-  }, 800);
+  useEffect(() => {
+   setInterval(() => settime(localtime), 800);
+  });
 
   return (
     <>
