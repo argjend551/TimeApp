@@ -7,6 +7,11 @@ main {
   flex: 1;
 }
 
+/* https://www.rapidtables.com/convert/color/hex-to-rgb.html - Ganska bra konvertor från hex(våra trello färgkoder) /Tim */
+.color-nav{
+  background-color: rgb(8, 60, 93)
+}
+
 .favoriteSite {
   margin: 1rem;
   padding: 2rem 2rem;
