@@ -120,7 +120,7 @@ function MyForm(props) {
             <option value={14}>UTC+14</option>
           </Form.Select>
         </Form.Group>
-        <Button type="submit" value="Add">
+        <Button type="submit" value="Add" className="add-city-button">
           Add{" "}
         </Button>
       </form>
