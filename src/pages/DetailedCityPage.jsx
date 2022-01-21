@@ -2,6 +2,7 @@ import { useLocation } from "react-router-dom";
 import React from "react";
 import GetLocalTime from "../components/GetLocalTime";
 import { useState } from "react";
+import Clock from "../components/Clock";
 
 function DetailedCityPage() {
   const { state } = useLocation();
@@ -18,7 +19,8 @@ function DetailedCityPage() {
     >
       <h1 className="cityName">{city}</h1>
       <div className="citypagecontent">
-        <h2>Analog Clock</h2>
+        <h2>AnalogClock</h2>
+        <Clock offset={timezone} settime={settime} />
         <GetLocalTime offset={timezone} settime={settime} />
         <div className="aboutCity">
           <h3 className="titleAboutCity">About {city}</h3>

@@ -8,7 +8,7 @@ function Home() {
   return (
     <Container align="center" className="card-container">
       <Row>
-        <Clock />
+        <Clock offset={1} />
       </Row>
       <ReadCityList />
     </Container>

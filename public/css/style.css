@@ -3,6 +3,7 @@
 @import url("clock.css");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
 
+
 main {
   flex: 1;
 }
@@ -28,7 +29,7 @@ main {
 .favoriteCity {
   color: white;
   font-family: 'Merriweather';
-}
+}  
 
 .favoriteList {
   display: inline-block;
