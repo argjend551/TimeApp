@@ -47,11 +47,23 @@ default blå färgen .dvs om man bara tar bort den här css stylingen för heade
   display: inline-block;
   margin-top: 6%;
 }
-.favoriteCity {
-  color: white;
+.content-city{
+  color: rgb(255, 255, 255);
   font-family: 'Merriweather';
-}  
+ backdrop-filter: blur(80px);
+ font-size: 25px;
 
+}
+
+.content-city p {
+  margin-top: 100%;
+  display: inline;
+padding: 0 45px 0 5px;
+}
+
+.favoriteCity{
+  height: 130px;
+}
 .favoriteList {
   display: inline-block;
   margin-top: 4%;
@@ -62,6 +74,7 @@ default blå färgen .dvs om man bara tar bort den här css stylingen för heade
   margin-left: 5%;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   overflow-y: scroll;
+  
 }
 
 #root {

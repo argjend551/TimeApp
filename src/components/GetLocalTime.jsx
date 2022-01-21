@@ -35,7 +35,7 @@ function GetLocalTime(props) {
 
   return (
     <>
-      <h4>{localtime}</h4>
+      <p>{localtime}</p>
     </>
   );
 }

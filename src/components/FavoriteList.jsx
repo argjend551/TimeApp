@@ -11,10 +11,14 @@ function FavoriteList(props) {
 
   return (
     <>
-      <div className="favoriteCity" style={background}>
-        <h1>{city}</h1>
-        {utc && <GetLocalTime offset={utc} settime={settime} />}
-      </div>
+      {utc && (
+        <div className="favoriteCity" style={background}>
+          <div className="content-city">
+            <p>{city}             </p> 
+            <GetLocalTime offset={utc} settime={settime} />
+          </div>
+        </div>
+      )}
     </>
   );
 }
