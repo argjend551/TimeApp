@@ -14,6 +14,7 @@ function MyForm(props) {
   function updateFormValue(event) {
     let { name, value } = event.target;
     changeFormValues({ [name]: value });
+
   }
 
   function submitForm(event) {
@@ -81,6 +82,9 @@ function MyForm(props) {
         <Form.Group className="mb-3">
           <Form.Label htmlFor="disabledSelect">Select UTC</Form.Label>
           <Form.Select name="utc" onChange={updateFormValue}>
+            <option value="" disabled selected hidden>
+              UTC
+            </option>
             <option value={-12}>UTC-12</option>
             <option value={-11}>UTC-11</option>
             <option value={-10}>UTC-10</option>
