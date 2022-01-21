@@ -18,9 +18,9 @@ function ReadCity(props) {
         <Card.Img variant="top" src={image} />
         <Card.Body>
           <Card.Title>{city}</Card.Title>
-          <Card.Text>
-            <GetLocalTime offset={timezone} settime={settime} />
-          </Card.Text>
+
+          <GetLocalTime offset={timezone} settime={settime} />
+
           <Button
             variant="primary"
             onClick={() => navigate("/city", { state: { ...{ town } } })}
