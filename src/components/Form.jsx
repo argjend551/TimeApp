@@ -80,7 +80,7 @@ function MyForm(props) {
             maxLength={2}
           />
         </Form.Group>
-        <Button type="submit" value="Add">
+        <Button type="submit" value="Add" className="add-city-button">
           Add{" "}
         </Button>
       </form>
