@@ -30,11 +30,8 @@ function GetLocalTime(props) {
 
   // inteval every second, updates the time.
   useEffect(() => {
-    const a = setInterval(() => settime(localtime), 800);
-      return () => {
-        clearInterval(a);
-      };
-  },[]);
+   setInterval(() => settime(localtime), 800);
+  });
 
   return (
     <>
