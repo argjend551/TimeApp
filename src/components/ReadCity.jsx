@@ -23,7 +23,7 @@ function ReadCity(props) {
 
           <Button
             variant="primary"
-            onClick={() => navigate("/city", { state: { ...{ town } } })}
+            onClick={() => navigate(`${city}`, { state: { ...{ town } } })}
           >
             More Info
           </Button>
