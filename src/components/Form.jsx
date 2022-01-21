@@ -1,4 +1,4 @@
-import useStates from "./useStates";
+import useStates from "../js/useStates";
 import Button from "react-bootstrap/Button";
 import store from "../js/localStore";
 import PresistantData from "../components/PresistantData";
