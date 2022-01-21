@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 export default function Header() {
   return (
     <>
-      <Navbar bg="dark" variant="dark" sticky="top">
+      <Navbar className="color-nav" variant="dark" sticky="top">
         <Container>
           <Navbar.Brand href="/">
             <img
@@ -22,7 +22,7 @@ export default function Header() {
             />{" "}
             TimeApp
           </Navbar.Brand>
-          <Button href="/MyTimezones">My Timezones</Button>
+          <Button className="custom-btn" href="/MyTimezones">My Timezones</Button>
         </Container>
       </Navbar>
     </>
