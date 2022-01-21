@@ -31,10 +31,17 @@ default blå färgen .dvs om man bara tar bort den här css stylingen för heade
   width: 150px;
   display: block;
   margin-bottom: 20px;
-  height: 30px;
+  height: 40px;
   font-size: 20px;
   margin-left: 30px;
-  font-family: 'Merriweather';
+}
+.form select{
+   width: 150px;
+  display: block;
+  margin-bottom: 20px;
+  height: 40px;
+  font-size: 20px;
+  margin-left: 30px;
 }
 .form {
   display: inline-block;
