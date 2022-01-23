@@ -19,8 +19,8 @@ function Clock(props) {
 
 
   return (
-    <Col>
-      <div className="clock">
+    <Col className="d-flex justify-content-center">
+      <div className="clock" align="center">
         <div className="hour_hand"
           style={{ transform: `rotateZ(${hours * 30}deg)` }}>
 
