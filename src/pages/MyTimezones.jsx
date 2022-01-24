@@ -7,7 +7,8 @@ function Favorites() {
       <h1>Add a timezone</h1>
       <AddCity></AddCity>
 
-      <FavoriteList></FavoriteList>
+
+      {/* <FavoriteList></FavoriteList> */}
     </div>
   );
 }

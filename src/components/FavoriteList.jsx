@@ -1,9 +1,10 @@
 import { useState } from "react";
 import GetLocalTime from "./GetLocalTime";
+import RemoveButton from "./RemoveButton";
 
 function FavoriteList(props) {
   const [time, settime] = useState();
-  let { utc, city } = props;
+  let { utc, city, indexId } = props;
 
   var background = {
     backgroundImage: `url("https://source.unsplash.com/random/440x360/?${city}")`,
@@ -14,9 +15,10 @@ function FavoriteList(props) {
       {utc && (
         <div className="favoriteCity" style={background}>
           <div className="content-city">
-            <p>{city}             </p> 
+            <p>{city}             </p>
             <GetLocalTime offset={utc} settime={settime} />
           </div>
+          {/* <RemoveButton buttonId={indexId} /> */}
         </div>
       )}
     </>
