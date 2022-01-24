@@ -52,7 +52,7 @@ default blå färgen .dvs om man bara tar bort den här css stylingen för heade
   font-family: 'Merriweather';
  backdrop-filter: blur(80px);
  font-size: 25px;
-
+text-shadow: rgb(0, 0, 0) 1px 0 10px;
 }
 
 .content-city p {
