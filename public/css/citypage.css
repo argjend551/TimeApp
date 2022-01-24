@@ -22,7 +22,8 @@
 
 .cityName {
   margin-top: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  font-size: 66px;
 }
 
 .digitalClockCityPage {
@@ -31,7 +32,7 @@
   padding: 10px 20px;
   border-radius: 10px;
   border: solid rgb(8, 60, 93) 5px;
-  font-size: x-large;
+  font-size: 48px;
   margin-bottom: 40px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
