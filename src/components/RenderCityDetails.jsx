@@ -1,12 +1,16 @@
 RenderCityDetails;
 import Clock from "../components/Clock";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import GetLocalTime from "../components/GetLocalTime";
 
 function RenderCityDetails(props) {
   const { town } = props;
   const { id, city, timezone, image, imageBgr } = town;
   const [time, settime] = useState();
+
+  useEffect(() => {
+    scrollTo(0, 0);
+  }, []);
 
   return (
     <>
@@ -19,7 +23,10 @@ function RenderCityDetails(props) {
         <h1 className="cityName">{city}</h1>
         <div className="citypagecontent">
           <Clock offset={timezone} settime={settime} />
-          <GetLocalTime offset={timezone} settime={settime} />
+          <div className="digitalClockCityPage">
+            {" "}
+            <GetLocalTime offset={timezone} settime={settime} />
+          </div>
           <div className="aboutCity">
             <h3 className="titleAboutCity">About {city}</h3>
             <p>
