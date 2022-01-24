@@ -39,7 +39,8 @@
   height: 60px;
   background: #222;
   align-self: center;
-  top: 30%;
+  top: 31%;
+  left: 50%;
   transform-origin: bottom;
 }
 
@@ -49,7 +50,8 @@
   height: 80px;
   background: #444;
   align-self: center;
-  top: 4.5%;
+  top: 3.6%;
+  left: 50%;
   transform-origin: bottom;
 }
 
@@ -59,7 +61,8 @@
   height: 118px;
   background: red;
   align-self: center;
-  bottom: 35%;
+  bottom: 37%;
+  left: 50%;
   transform-origin: bottom;
 }
 
@@ -69,58 +72,66 @@
 }
 
 .one {
-  bottom: 79%;
+  bottom: 82%;
   left: 55%;
 }
 
 .two {
-  bottom: 63%;
+  bottom: 66%;
   left: 65%;
 }
 
 .three {
-  bottom: 42%;
+  bottom: 45%;
   left: 68%;
 }
 
 .four {
   left: 56%;
-  bottom: 20%;
+  bottom: 23%;
 }
 
 .five {
   left: 34%;
-  bottom: 6%;
+  bottom: 9%;
 }
 
 .six {
   left: 10%;
+  bottom: 3%;
 }
 
 .seven {
   right: 15%;
-  bottom: 5%;
+  bottom: 8%;
 }
 
 .eight {
   right: 37%;
-  bottom: 21%;
+  bottom: 24%;
 }
 
 .nine {
-  bottom: 42%;
+  bottom: 45%;
   right: 47%;
 }
 
 .ten {
-  bottom: 64%;
+  bottom: 67%;
   right: 47%;
 }
 .eleven {
-  bottom: 79%;
+  bottom: 82%;
   right: 43%;
 }
 .twelve {
-  bottom: 85%;
+  bottom: 88%;
   right: 30%;
 }
+/* .circle{
+   height: 25px;
+  width: 25px;
+  background-color: rgb(8, 60, 93);
+  border-radius: 50%;
+  display: inline-block;
+} */

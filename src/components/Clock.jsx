@@ -47,7 +47,11 @@ function Clock(props) {
         <span className="ten">10</span>
         <span className="eleven">11</span>
         <span className="twelve">12</span>
+        {/* <span className="circle"></span> */}
+
+
       </div>
+
 
     </Col>
   );
