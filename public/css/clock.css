@@ -1,124 +1,126 @@
 .clock {
+  margin: 20px;
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  display: inline-block;
-  transform: translate(-50%, -50%);
+  justify-content: center;
+  /* position: relative; */
+  /* top: 50%;
+  left: 50%; */
+  /* display: inline-block; */
+  /* transform: translate(-50%, -50%); */
   box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
   font-size: 24px;
   color: #444;
   text-align: center;
   border: solid rgb(8, 60, 93) 5px;
+  /* text-align: center; */
+  background-color: white;
 }
 
 .clock::after {
   background: #aaa;
+  justify-content: center;
   content: "";
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  position: relative;
+  /* position: relative; */
   z-index: 2;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 2px solid #fff;
+  /* top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  /* border: 2px solid #fff; */
 }
 
 .hour_hand {
-  position: absolute;
+  position: relative;
   width: 6px;
   height: 60px;
   background: #222;
+  align-self: center;
   top: 30%;
-  left: 49%;
   transform-origin: bottom;
 }
 
 .min_hand {
-  position: absolute;
+  position: relative;
   width: 4px;
   height: 80px;
   background: #444;
-  top: 22.5%;
-  left: 49%;
+  align-self: center;
+  top: 4.5%;
   transform-origin: bottom;
 }
 
 .sec_hand {
-  position: absolute;
+  position: relative;
   width: 2px;
   height: 118px;
   background: red;
-  top: 10.5%;
-  left: 50%;
+  align-self: center;
+  bottom: 35%;
   transform-origin: bottom;
 }
 
 .clock span {
-  position: absolute;
+  position: relative;
   font-weight: 700;
 }
 
-.twelve {
-  top: 10px;
-  left: 46%;
-}
-
 .one {
-  top: 10%;
-  right: 26%;
-}
-
-.eleven {
-  top: 10%;
-  left: 26%;
+  bottom: 79%;
+  left: 55%;
 }
 
 .two {
-  top: 25%;
-  right: 10%;
+  bottom: 63%;
+  left: 65%;
 }
 
 .three {
-  right: 10px;
-  top: 46%;
+  bottom: 42%;
+  left: 68%;
 }
 
 .four {
-  right: 30px;
-  top: 67%;
+  left: 56%;
+  bottom: 20%;
 }
 
 .five {
-  right: 78px;
-  top: 80%;
+  left: 34%;
+  bottom: 6%;
 }
 
 .six {
-  bottom: 10px;
-  left: 50%;
+  left: 10%;
 }
 
 .seven {
-  left: 80px;
-  top: 82%;
+  right: 15%;
+  bottom: 5%;
 }
 
 .eight {
-  left: 30px;
-  top: 67%;
+  right: 37%;
+  bottom: 21%;
 }
 
 .nine {
-  left: 10px;
-  top: 46%;
+  bottom: 42%;
+  right: 47%;
 }
 
 .ten {
-  top: 25%;
-  left: 10%;
+  bottom: 64%;
+  right: 47%;
+}
+.eleven {
+  bottom: 79%;
+  right: 43%;
+}
+.twelve {
+  bottom: 85%;
+  right: 30%;
 }
