@@ -8,6 +8,7 @@ function RenderCityDetails(props) {
   const { id, city, timezone, image, imageBgr } = town;
   const [time, settime] = useState();
 
+  //Scroll to top of page when component mounts the first time.
   useEffect(() => {
     scrollTo(0, 0);
   }, []);
