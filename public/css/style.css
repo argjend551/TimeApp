@@ -20,6 +20,11 @@ default blå färgen .dvs om man bara tar bort den här css stylingen för heade
   border-color: #c55911;
 }
 
+.color-nav .custom-btn:hover {
+  background-color: #b14f0e;
+  border-color: #b14f0e;
+}
+
 .favoriteSite {
   margin: 1rem;
   padding: 2rem 2rem;

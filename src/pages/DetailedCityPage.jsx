@@ -1,7 +1,7 @@
 import { useLocation, useParams } from "react-router-dom";
 import React from "react";
-import ReadCityFromParams from "../components/ReadCityFromParams";
-import ShowCityFromCard from "../components/ShowCityFromCard";
+import ReadCityFromParams from "../components/cards_detailed/ReadCityFromParams";
+import ShowCityFromCard from "../components/cards_detailed/ShowCityFromCard";
 
 //If there is a state set from cards and retrieved through useLocation(),
 //the ShowCityFromCard component is mounted. Otherwise ReadCityFromParams is mounted.

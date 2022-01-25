@@ -1,6 +1,6 @@
-import useStates from "../js/useStates";
+import useStates from "../../js/useStates";
 import Button from "react-bootstrap/Button";
-import store from "../js/localStore";
+import store from "../../js/localStore";
 import Form from "react-bootstrap/Form";
 
 function MyForm(props) {
