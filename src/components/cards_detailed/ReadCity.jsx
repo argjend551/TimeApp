@@ -1,4 +1,4 @@
-import GetLocalTime from "./GetLocalTime";
+import GetLocalTime from "../main_components/GetLocalTime";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "react-bootstrap/Button";
