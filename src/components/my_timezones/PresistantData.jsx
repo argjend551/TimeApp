@@ -1,7 +1,7 @@
 import { useState } from "react";
 import MyForm from "./Form";
 import FavoriteList from "./FavoriteList";
-import store from "../js/localStore";
+import store from "../../js/localStore";
 import RemoveButton from "./RemoveButton";
 
 

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import GetLocalTime from "./GetLocalTime";
+import GetLocalTime from "../main_components/GetLocalTime";
 import RemoveButton from "./RemoveButton";
 
 function FavoriteList(props) {

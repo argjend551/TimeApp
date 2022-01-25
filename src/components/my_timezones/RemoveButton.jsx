@@ -1,6 +1,6 @@
 import { useState } from "react";
 import MyForm from "./Form";
-import store from "../js/localStore";
+import store from "../../js/localStore";
 import PresistantData from "./PresistantData";
 import AddCity from "./AddCity";
 

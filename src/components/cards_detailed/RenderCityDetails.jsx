@@ -1,7 +1,7 @@
 RenderCityDetails;
-import Clock from "../components/Clock";
+import Clock from "../main_components/Clock";
 import { useState, useEffect } from "react";
-import GetLocalTime from "../components/GetLocalTime";
+import GetLocalTime from "../main_components/GetLocalTime";
 
 function RenderCityDetails(props) {
   const { town } = props;
