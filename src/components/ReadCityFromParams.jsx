@@ -23,7 +23,7 @@ function ReadCityFromParams(props) {
 
   return (
     <>
-      {!town && <h1>Can't find city</h1>}
+      {!town && <h1 className="pageNotFound">Page not found</h1>}
       {!!town && <RenderCityDetails {...{ town }} />}
     </>
   );
