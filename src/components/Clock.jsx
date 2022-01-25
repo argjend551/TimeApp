@@ -22,7 +22,8 @@ function Clock(props) {
     <Col className="d-flex justify-content-center">
       <div className="clock" align="center">
         <div className="hour_hand"
-          style={{ transform: `rotateZ(${hours * 30}deg)` }} style={{ transform: `rotateZ(${minutes * 0.5}deg)` }}>
+          style={{ transform: `rotateZ(${hours * 30 + minutes * 0.5}deg)` }}
+        >
 
         </div>
         <div className="min_hand"
