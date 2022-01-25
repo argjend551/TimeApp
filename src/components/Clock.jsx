@@ -1,8 +1,10 @@
 // import React, { Component } from "react";
 import Col from 'react-bootstrap/Col'
+import { useEffect, useState } from 'react';
 
 function Clock(props) {
   let { offset, settime } = props
+  const setTime = useState(new Date());
 
   let date = new Date();
 
@@ -13,9 +15,22 @@ function Clock(props) {
   let minutes = time.getMinutes()
   let hours = time.getHours()
   let seconds = time.getSeconds()
+  let localtime = seconds + minutes + hours
 
-  setInterval(() => {
-  }, 1000);
+  // setInterval(1000)
+  // useEffect(() => {
+  //   setInterval(Clock, 1000);
+  // });
+  // useEffect(() => {
+  //   const interval = setInterval(
+  //     () => setTime(new Date()),
+  //     1000
+  //   )
+  // })
+  useEffect(() => {
+    setInterval(() => settime(localtime), 800);
+  });
+
 
 
   return (
@@ -68,13 +83,13 @@ function Clock(props) {
 //     };
 //   }
 
-//   componentDidMount() {
-//     this.timeId = setInterval(() => {
-//       this.setState({
-//         time: new Date()
-//       })
-//     }, 1000);
-//   }
+// componentDidMount() {
+//   this.timeId = setInterval(() => {
+//     this.setState({
+//       time: new Date()
+//     })
+//   }, 1000);
+// }
 
 //   componentWillMount() {
 //     clearInterval(this.timeId)
