@@ -4,17 +4,19 @@ import store from "../../js/localStore";
 import Form from "react-bootstrap/Form";
 
 function MyForm(props) {
-  let { addCity, add } = props;
+  let { setAndSaveItems, stateList } = props;
 
   let [formValues, changeFormValues] = useStates({
-    utc: "",
+    id: "5050",
     city: "",
+    timezone: "",
+    image: "none.",
+    imageBgr: "None"
   });
 
   function updateFormValue(event) {
     let { name, value } = event.target;
     changeFormValues({ [name]: value });
-
   }
 
   function submitForm(event) {
@@ -22,42 +24,10 @@ function MyForm(props) {
     // the browser (don't reload on submit)
     event.preventDefault();
 
-    // Save into already created list.
-    if (store.list != null) {
-      const data = JSON.stringify(store.list);
-      var items = JSON.parse(data);
-
-      items.push({
-        id: data.length,
-        city: formValues.city,
-        timezone: formValues.utc,
-        image: "none.",
-        imageBgr: "None",
-      });
-
-      store.list = items;
-      store.save();
-    }
-    // New list init.
-    else {
-      const nItem = [
-        {
-          id: "1",
-          city: formValues.city,
-          timezone: formValues.utc,
-          image: "none.",
-          imageBgr: "None",
-        },
-      ];
-
-      store.list = nItem;
-      store.save();
-    }
-
-    addCity([...add, formValues]);
+    setAndSaveItems([...stateList, formValues]);
   }
 
-  let { city, utc } = formValues;
+  let { city, timezone } = formValues;
   return (
     <div className="form">
       <form onSubmit={submitForm}>
@@ -75,7 +45,7 @@ function MyForm(props) {
         </Form.Group>
         <Form.Group className="mb-3">
           <Form.Label htmlFor="disabledSelect">Select UTC</Form.Label>
-          <Form.Select name="utc" onChange={updateFormValue}>
+          <Form.Select name="timezone" onChange={updateFormValue}>
             <option value="" disabled selected hidden>
               UTC
             </option>

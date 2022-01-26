@@ -1,18 +1,12 @@
 import { useState } from "react";
 import MyForm from "./Form";
-import FavoriteList from "./FavoriteList";
-import PresistantData from "./PresistantData";
 
-function AddCity() {
-  const [add, addCity] = useState([]);
+function AddCity(props) {
+  let { stateList, setAndSaveItems, } = props;
 
   return (
     <>
-      <MyForm addCity={addCity} add={add}></MyForm>
-      <div className="favoriteList">
-
-        <PresistantData />
-      </div>
+      <MyForm setAndSaveItems={setAndSaveItems} stateList={stateList} ></MyForm>
     </>
   );
 }
