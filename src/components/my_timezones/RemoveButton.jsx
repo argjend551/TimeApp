@@ -1,13 +1,22 @@
 import { useState } from "react";
-import MyForm from "./Form";
-import store from "../../js/localStore";
-import PresistantData from "./PresistantData";
-import AddCity from "./AddCity";
-
 
 function RemoveButton(props) {
   const [remove, removeCity] = useState([]);
-  let { buttonId } = props;
+  let { buttonId, setAndSaveItems, stateList } = props;
+
+  const handleDelete = (buttonId) => {
+
+    // Skall vara rätt ? filter((element) => { /* ... */ } )
+    // item typ fel ? 
+
+    //let updatedList = stateList.filter((item) => { return item.indexId != buttonId });
+    let updatedList = stateList.filter((item) => { return item.indexId != buttonId });
+
+    // vet inte varför det funkar om jag splicar efter ovan.
+    updatedList.splice(buttonId, 1);
+
+    setAndSaveItems(updatedList);
+  };
 
   return (
     <button
@@ -18,22 +27,6 @@ function RemoveButton(props) {
     </button>
   );
 }
-
-const handleDelete = (buttonId) => {
-
-  const data = JSON.stringify(store.list);
-  var items = JSON.parse(data);
-
-  // dunno why id becomes 79.
-  // items.push({ "id": data.length, "city": cityName, "timezone": cityTimezone, "image": "none.", "imageBgr": "None" });
-  items.splice(buttonId, 1);
-
-  store.list = items;
-  store.save();
-
-  console.log("Button id " + buttonId);
-};
-
 
 
 export default RemoveButton;
