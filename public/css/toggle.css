@@ -1,0 +1,77 @@
+.toggle {
+  font-size: 24px;
+  background-color: rgba(209, 211, 211, 0.7);
+  padding: 5px 10px;
+  border-radius: 50px;
+  height: 100px;
+  width: 200px;
+  position: relative;
+  cursor: pointer;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  border: 2px solid #083c5d;
+}
+
+.notch {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-image: linear-gradient(#d1d3d3, #083c5d);
+  padding: 5px 10px;
+  box-shadow: 0 0 8px white;
+  /* background-image: url("../timezone.svg");*/
+  transition: all 0.5s ease;
+}
+
+.digital .hourToggle {
+  position: relative;
+  width: 2px;
+  height: 20%;
+  background: white;
+  align-self: center;
+  top: 30%;
+  left: 50%;
+  transform-origin: bottom;
+  transform: rotate(325deg);
+  z-index: 2;
+  opacity: 1;
+}
+
+.digital .minToggle {
+  position: relative;
+  width: 2px;
+  height: 35%;
+  background: rgb(68, 67, 67);
+  align-self: center;
+  left: 50%;
+  top: -3%;
+  transform-origin: bottom;
+  transform: rotate(45deg);
+  z-index: 1;
+  opacity: 1;
+}
+
+.digital .notch {
+  transform: translate(100px, 0);
+}
+
+.digitalClockToggle {
+  border: 1px solid white;
+  border-radius: 50px;
+  padding-top: 5px;
+  /*color: rgb(68, 67, 67);*/
+  color: white;
+  margin-top: 27%;
+}
+
+.hourToggle {
+  opacity: 0;
+}
+
+.minToggle {
+  opacity: 0;
+}
