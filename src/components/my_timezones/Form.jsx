@@ -14,7 +14,13 @@ function MyForm(props) {
   function updateFormValue(event) {
     let { name, value } = event.target;
     changeFormValues({ [name]: value });
+  }
 
+  function clearForms() {
+    changeFormValues({
+      utc: "",
+      city: "",
+    });
   }
 
   function submitForm(event) {
@@ -55,9 +61,11 @@ function MyForm(props) {
     }
 
     addCity([...add, formValues]);
+    clearForms();
   }
 
   let { city, utc } = formValues;
+  const clearForm = city.length > 0;
   return (
     <div className="form">
       <form onSubmit={submitForm}>
@@ -75,7 +83,7 @@ function MyForm(props) {
         </Form.Group>
         <Form.Group className="mb-3">
           <Form.Label htmlFor="disabledSelect">Select UTC</Form.Label>
-          <Form.Select name="utc" onChange={updateFormValue}>
+          <Form.Select name="utc" onChange={updateFormValue} required>
             <option value="" disabled selected hidden>
               UTC
             </option>
@@ -121,6 +129,11 @@ function MyForm(props) {
         <Button type="submit" value="Add" className="add-city-button">
           Add{" "}
         </Button>
+        {clearForm && (
+          <Button value="Add" className="add-city-button" onClick={clearForms}>
+            Clear{" "}
+          </Button>
+        )}
       </form>
     </div>
   );

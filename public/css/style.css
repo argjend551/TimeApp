@@ -93,6 +93,7 @@ footer {
 }
 
 .add-city-button {
+  margin-left: 10px;
   background-color: rgb(8, 60, 93) !important;
   border-color: rgb(8, 60, 93) !important;
 }
