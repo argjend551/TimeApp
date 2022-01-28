@@ -6,19 +6,12 @@ import Form from "react-bootstrap/Form";
 function MyForm(props) {
   let { setAndSaveItems, stateList } = props;
 
-  /*
-  let [formValues, changeFormValues] = useStates({
-    utc: "",
-    city: "",
-  });
-  */
-
   let [formValues, changeFormValues] = useStates({
     id: "5050",
     city: "",
-    timezone: "",
+    timezone: "UTC",
     image: "none.",
-    imageBgr: "None"
+    imageBgr: "None",
   });
 
   function updateFormValue(event) {
@@ -28,8 +21,8 @@ function MyForm(props) {
 
   function clearForms() {
     changeFormValues({
-      utc: "",
       city: "",
+      timezone: "UTC",
     });
   }
 
@@ -39,6 +32,7 @@ function MyForm(props) {
     event.preventDefault();
 
     setAndSaveItems([...stateList, formValues]);
+    clearForms();
   }
 
   let { city, timezone } = formValues;
@@ -60,8 +54,13 @@ function MyForm(props) {
         </Form.Group>
         <Form.Group className="mb-3">
           <Form.Label htmlFor="disabledSelect">Select UTC</Form.Label>
-          <Form.Select name="timezone" onChange={updateFormValue} required>
-            <option value="" disabled selected hidden>
+          <Form.Select
+            name="timezone"
+            onChange={updateFormValue}
+            value={timezone}
+            required
+          >
+            <option disabled selected hidden>
               UTC
             </option>
             <option value={-12}>UTC-12</option>
@@ -107,7 +106,11 @@ function MyForm(props) {
           Add{" "}
         </Button>
         {clearForm && (
-          <Button value="Add" className="add-city-button" onClick={clearForms}>
+          <Button
+            value="Clear"
+            className="add-city-button"
+            onClick={clearForms}
+          >
             Clear{" "}
           </Button>
         )}
