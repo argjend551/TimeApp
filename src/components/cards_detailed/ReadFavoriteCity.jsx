@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
+import { AiFillStar } from "react-icons/ai";
 
 function ReadFavoriteCity(props) {
   let { favoriteTown } = props;
@@ -25,7 +26,9 @@ function ReadFavoriteCity(props) {
           src={`https://source.unsplash.com/random/640x360${city}`}
         />
         <Card.Body>
+          <AiFillStar />
           <Card.Title>{city}</Card.Title>
+
 
           <GetLocalTime offset={timezone} settime={settime} />
 
