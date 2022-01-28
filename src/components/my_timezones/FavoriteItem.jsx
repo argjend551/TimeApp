@@ -18,10 +18,14 @@ function FavoriteList(props) {
       {utc && (
         <div className="favoriteCity" style={background}>
           <div className="content-city">
-            <p>{city}             </p>
+            <p>{city} </p>
             <GetLocalTime offset={utc} settime={settime} />
+            <RemoveButton
+              buttonId={indexId}
+              setAndSaveItems={setAndSaveItems}
+              stateList={stateList}
+            />
           </div>
-          <RemoveButton buttonId={indexId} setAndSaveItems={setAndSaveItems} stateList={stateList} />
         </div>
       )}
     </>

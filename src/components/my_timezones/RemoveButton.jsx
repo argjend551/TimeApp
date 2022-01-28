@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { FaTimes } from "react-icons/fa";
 function RemoveButton(props) {
   const [remove, removeCity] = useState([]);
   let { buttonId, setAndSaveItems, stateList } = props;
@@ -19,12 +19,11 @@ function RemoveButton(props) {
   };
 
   return (
-    <button
-      className="btn btn-danger btn-xs"
+    <FaTimes
+      className="deleteBtn"
       onClick={() => handleDelete(buttonId)}
     >
-      Delete {buttonId}
-    </button>
+    </FaTimes>
   );
 }
 
