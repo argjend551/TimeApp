@@ -14,19 +14,17 @@ function ReadCity(props) {
 
   return (
     <Col>
-      <Card className="city-card" style={{ width: "19rem" }}>
+      <Card
+        className="city-card"
+        style={{ width: "19rem" }}
+        onClick={() => navigate(`${city}`, { state: { ...{ town } } })}
+      >
         <Card.Img variant="top" src={image} />
         <Card.Body>
           <Card.Title>{city}</Card.Title>
 
           <GetLocalTime offset={timezone} settime={settime} />
 
-          <Button
-            variant="primary"
-            onClick={() => navigate(`${city}`, { state: { ...{ town } } })}
-          >
-            More Info
-          </Button>
         </Card.Body>
       </Card>
     </Col>
