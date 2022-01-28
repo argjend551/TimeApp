@@ -32,7 +32,8 @@ function MyForm(props) {
     event.preventDefault();
 
 
-    formValues.id = stateList.length;
+    let localId = 1000 + stateList.length;
+    formValues.id = (localId).toString();
 
     setAndSaveItems([...stateList, formValues]);
     clearForms();
