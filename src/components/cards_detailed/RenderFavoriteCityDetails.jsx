@@ -3,9 +3,9 @@ import { useState, useEffect } from "react";
 import GetLocalTime from "../main_components/GetLocalTime";
 import Toggle from "./Toggle";
 
-function RenderCityDetails(props) {
-  const { town } = props;
-  const { id, city, timezone, image, imageBgr } = town;
+function RenderFavoriteCityDetails(props) {
+  const { favoriteTown } = props;
+  const { id, city, timezone } = favoriteTown;
   const [time, settime] = useState();
   const [toggled, setToggled] = useState(false);
 
@@ -24,10 +24,8 @@ function RenderCityDetails(props) {
       <div
         className="cityBackgroundImg"
         style={{
-          backgroundImage:
-            imageBgr === "None"
-              ? `url(https://source.unsplash.com/random/1920x1272${city})`
-              : `url(${imageBgr})`,
+          backgroundImage: `url(
+            https://source.unsplash.com/random/1920x1272${city})`,
         }}
       >
         <h1 className="cityName">{city}</h1>
@@ -45,4 +43,4 @@ function RenderCityDetails(props) {
   );
 }
 
-export default RenderCityDetails;
+export default RenderFavoriteCityDetails;

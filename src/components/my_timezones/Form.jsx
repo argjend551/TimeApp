@@ -31,9 +31,8 @@ function MyForm(props) {
     // the browser (don't reload on submit)
     event.preventDefault();
 
-
     let localId = 1000 + stateList.length;
-    formValues.id = (localId).toString();
+    formValues.id = localId.toString();
 
     setAndSaveItems([...stateList, formValues]);
     clearForms();
