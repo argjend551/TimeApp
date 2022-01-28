@@ -15,19 +15,20 @@ function ReadFavoriteCity(props) {
 
   return (
     <Col>
-      <Card className="city-card" style={{ width: "19rem" }}>
-        <Card.Img variant="top" src={`https://source.unsplash.com/random/640x360${city}`} />
+      <Card
+        className="city-card"
+        style={{ width: "19rem" }}
+        onClick={() => navigate(`${city}`, { state: { ...{ favoriteTown } } })}
+      >
+        <Card.Img
+          variant="top"
+          src={`https://source.unsplash.com/random/640x360${city}`}
+        />
         <Card.Body>
           <Card.Title>{city}</Card.Title>
 
           <GetLocalTime offset={timezone} settime={settime} />
 
-          <Button
-            variant="primary"
-            onClick={() => navigate(`${city}`, { state: { ...{ favoriteTown } } })}
-          >
-            More Info
-          </Button>
         </Card.Body>
       </Card>
     </Col>
