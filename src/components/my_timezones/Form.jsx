@@ -56,14 +56,13 @@ function MyForm(props) {
           />
         </Form.Group>
         <Form.Group className="mb-3">
-          <Form.Label htmlFor="disabledSelect">Select UTC</Form.Label>
           <Form.Select
             name="timezone"
             onChange={updateFormValue}
             value={timezone}
             required
           >
-            <option disabled selected hidden>
+            <option disabled hidden>
               UTC
             </option>
             <option value={-12}>UTC-12</option>
