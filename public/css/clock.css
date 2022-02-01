@@ -135,3 +135,10 @@
   border-radius: 50%;
   display: inline-block;
 } */
+
+@media (max-width: 350px) {
+.clock{
+ margin: 20px -20px;
+}
+ } 
+
