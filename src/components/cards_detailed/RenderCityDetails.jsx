@@ -2,6 +2,9 @@ import Clock from "../main_components/Clock";
 import { useState, useEffect } from "react";
 import GetLocalTime from "../main_components/GetLocalTime";
 import Toggle from "./Toggle";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 function RenderCityDetails(props) {
   const { town } = props;
@@ -11,7 +14,7 @@ function RenderCityDetails(props) {
 
   //Invert previous state. If true, change to false.
   const handleClick = () => {
-    setToggled(s => !s);
+    setToggled((s) => !s);
   };
 
   //Scroll to top of page when component mounts the first time.
@@ -20,28 +23,33 @@ function RenderCityDetails(props) {
   }, []);
 
   return (
-    <>
-      <div
-        className="cityBackgroundImg"
-        style={{
-          backgroundImage:
-            imageBgr === "None"
-              ? `url(https://source.unsplash.com/random/1920x1272${city})`
-              : `url(${imageBgr})`,
-        }}
-      >
-        <h1 className="cityName">{city}</h1>
-        <div className="citypagecontent">
+    <Container
+      fluid
+      className="cityBackgroundImg"
+      style={{
+        backgroundImage:
+          imageBgr === "None"
+            ? `url(https://source.unsplash.com/random/1920x1272${city})`
+            : `url(${imageBgr})`
+      }}
+    >
+      <Row>
+        <Col className="col-12">
+          <h1 className="cityName">{city}</h1>
+        </Col>
+        <Col className="citypagecontent col-12">
           {!toggled && <Clock offset={timezone} settime={settime} />}
           {!!toggled && (
             <div className="digitalClockCityPage">
               <GetLocalTime offset={timezone} settime={settime} />
             </div>
           )}
+        </Col>
+        <Col className="col-12">
           <Toggle toggled={toggled} onClick={handleClick} />
-        </div>
-      </div>
-    </>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
