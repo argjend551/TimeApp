@@ -7,7 +7,7 @@ function ReadFavoriteCityList(props) {
   return (
     <Row>
       {favoriteCities.map(favoriteTown => (
-        <ReadFavoriteCity{...{ favoriteTown }} />
+        <ReadFavoriteCity key={favoriteTown.id}{...{ favoriteTown }} />
       ))}
     </Row>
   );
