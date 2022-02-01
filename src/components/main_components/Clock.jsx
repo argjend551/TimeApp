@@ -5,28 +5,20 @@ import { useEffect, useState } from 'react';
 function Clock(props) {
   let { offset, settime } = props
   const setTime = useState(new Date());
-
+  // creates an instance of the date and stores it in the variable date
   let date = new Date();
 
-
+  // creates another object for the date based of of timezone
   let utcTime = date.getTime() + date.getTimezoneOffset() * 60000;
 
   let time = new Date(utcTime + 3600000 * offset);
+  // vaues used to rotate the different hands by x degrees for y time passed
   let minutes = time.getMinutes()
   let hours = time.getHours()
   let seconds = time.getSeconds()
   let localtime = seconds + minutes + hours
 
-  // setInterval(1000)
-  // useEffect(() => {
-  //   setInterval(Clock, 1000);
-  // });
-  // useEffect(() => {
-  //   const interval = setInterval(
-  //     () => setTime(new Date()),
-  //     1000
-  //   )
-  // })
+  // updates clock ever 0.8 seconds
   useEffect(() => {
     setInterval(() => settime(localtime), 800);
   });
@@ -37,20 +29,23 @@ function Clock(props) {
     <Col className="d-flex justify-content-center">
       <div className="clock" align="center">
         <div className="hour_hand"
+          // rotates the hour hand by 30 degrees for each hour gone, aswell as 0.5 degrees for every minute making clock
+          //look more true to a regular clock
           style={{ transform: `rotateZ(${hours * 30 + minutes * 0.5}deg)` }}
         >
 
         </div>
         <div className="min_hand"
-          style={{ transform: `rotateZ(${minutes * 6}deg)` }}>
+          // rotates the min hand by 6 degrees per minute aswell as 0.1 degrees for each second
+          // to make it look true to a regular clock aswell
+          style={{ transform: `rotateZ(${minutes * 6 + seconds * 0.1}deg)` }}>
 
         </div>
         <div className="sec_hand"
+          // rotates sec hand by 6 degrees per second
           style={{ transform: `rotateZ(${seconds * 6}deg)` }}>
-
         </div>
-
-
+        {/* writes out the clock numbers */}
         <span className="one">1</span>
         <span className="two">2</span>
         <span className="three">3</span>
@@ -63,8 +58,6 @@ function Clock(props) {
         <span className="ten">10</span>
         <span className="eleven">11</span>
         <span className="twelve">12</span>
-        {/* <span className="circle"></span> */}
-
 
       </div>
 
@@ -72,28 +65,4 @@ function Clock(props) {
     </Col>
   );
 }
-// }
-// }
-// class Clock extends Component {
-
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       time: new Date()
-//     };
-//   }
-
-// componentDidMount() {
-//   this.timeId = setInterval(() => {
-//     this.setState({
-//       time: new Date()
-//     })
-//   }, 1000);
-// }
-
-//   componentWillMount() {
-//     clearInterval(this.timeId)
-//   }
-
-//   render() {
 export default Clock
