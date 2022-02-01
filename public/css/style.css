@@ -17,13 +17,13 @@ main {
 default blå färgen .dvs om man bara tar bort den här css stylingen för header knappen.  /Tim*/
 
 .color-nav .custom-btn {
-  background-color: #c55911;
-  border-color: #c55911;
+  background-image: linear-gradient(#d1d3d3, #083c5d);
+  border-color: silver;
 }
 
 .color-nav .custom-btn:hover {
-  background-color: #b14f0e;
-  border-color: #b14f0e;
+  background-image: linear-gradient(#a9acac, #062c44);
+  border-color: rgb(156, 154, 154);
 }
 
 .favoriteSite {
@@ -64,7 +64,7 @@ default blå färgen .dvs om man bara tar bort den här css stylingen för heade
   display: inline;
   padding: 0 45px 0 5px;
 }
-.deleteBtn{
+.deleteBtn {
   color: rgb(255, 0, 0);
   font-size: 20px;
   cursor: pointer;
@@ -110,4 +110,3 @@ footer {
   background-color: rgb(11, 80, 122) !important;
   border-color: rgb(11, 80, 122) !important;
 }
-
