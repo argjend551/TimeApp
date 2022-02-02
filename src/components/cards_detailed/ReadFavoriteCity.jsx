@@ -1,7 +1,6 @@
 import GetLocalTime from "../main_components/GetLocalTime";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import { AiFillStar } from "react-icons/ai";
@@ -12,6 +11,8 @@ function ReadFavoriteCity(props) {
   const [time, settime] = useState();
 
   const navigate = useNavigate();
+
+  //The design for the favorite-cards. Adds a star icon to indicate that it's a favorite city, one that the user created.
 
 
   return (
@@ -28,10 +29,7 @@ function ReadFavoriteCity(props) {
         <Card.Body>
           <AiFillStar />
           <Card.Title>{city}</Card.Title>
-
-
           <GetLocalTime offset={timezone} settime={settime} />
-
         </Card.Body>
       </Card>
     </Col>
