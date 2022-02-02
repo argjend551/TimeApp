@@ -32,7 +32,7 @@ function MyForm(props) {
     event.preventDefault();
 
     // Messy hotfix for bad keys.
-    let localId = Math.floor((Math.random() * 10000000) + 1);
+    let localId = Math.floor(Math.random() * 10000000 + 1);
     // let updatedList = stateList.filter((item) => { return localId != buttonId })
 
     formValues.id = localId.toString();
@@ -59,8 +59,14 @@ function MyForm(props) {
           />
         </Form.Group>
         <Form.Group className="mb-3">
-          <Form.Select name="timezone" onChange={updateFormValue} required>
-            <option value="" disabled selected hidden>
+          <Form.Control
+            as="select"
+            value={timezone}
+            name="timezone"
+            onChange={updateFormValue}
+            required
+          >
+            <option hidden value={""}>
               UTC
             </option>
             <option value={-12}>UTC-12</option>
@@ -100,7 +106,7 @@ function MyForm(props) {
             <option value={12.75}>UTC+12.45</option>
             <option value={13}>UTC+13</option>
             <option value={14}>UTC+14</option>
-          </Form.Select>
+          </Form.Control>
         </Form.Group>
         <Button type="submit" value="Add" className="add-city-button">
           Add{" "}
