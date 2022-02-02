@@ -4,8 +4,11 @@ import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
 import { Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 export default function Header() {
+
   return (
     <>
       <Navbar className="color-nav" variant="dark" sticky="top">
@@ -20,7 +23,14 @@ export default function Header() {
             />{" "}
             Timepoint
           </Navbar.Brand>
-          <Button className="custom-btn" href="/add-city">Add City</Button>
+
+          <Row>
+            <Col>
+              <div className="AddCityButton">
+                <Button type="button" className="custom-btn" href="/add-city">Add City</Button>
+              </div>
+            </Col>
+          </Row>
         </Container>
       </Navbar>
     </>
