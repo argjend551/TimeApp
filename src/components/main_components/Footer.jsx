@@ -7,7 +7,7 @@ export default function Footer() {
     <Container>
       <Row>
         <Col>
-          <p>Copyright &copy; 2022 TheTimeAppCompany</p>
+          <p>Copyright &copy; 2022 TheTimepointCompany</p>
         </Col>
       </Row>
     </Container>
