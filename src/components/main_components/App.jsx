@@ -29,7 +29,7 @@ function App() {
               <Home {...{ cities, favoriteCities, setfavoriteCities }} />
             }
           />
-          <Route path="/MyTimezones" element={<MyTimezones />} />
+          <Route path="/add-city" element={<MyTimezones />} />
           <Route
             path="/:cityview"
             element={<DetailedCityPage {...{ cities, favoriteCities }} />}

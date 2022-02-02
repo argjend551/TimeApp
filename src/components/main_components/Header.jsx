@@ -22,7 +22,7 @@ export default function Header() {
             />{" "}
             TimeApp
           </Navbar.Brand>
-          <Button className="custom-btn" href="/MyTimezones">My Timezones</Button>
+          <Button className="custom-btn" href="/add-city">Add City</Button>
         </Container>
       </Navbar>
     </>
