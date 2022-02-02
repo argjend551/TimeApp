@@ -20,7 +20,7 @@ export default function Header() {
               height="30"
               className="d-inline-block align-top"
             />{" "}
-            TimeApp
+            Timepoint
           </Navbar.Brand>
           <Button className="custom-btn" href="/add-city">Add City</Button>
         </Container>
