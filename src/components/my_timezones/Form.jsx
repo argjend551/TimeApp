@@ -59,13 +59,8 @@ function MyForm(props) {
           />
         </Form.Group>
         <Form.Group className="mb-3">
-          <Form.Select
-            name="timezone"
-            onChange={updateFormValue}
-            value={timezone}
-            required
-          >
-            <option disabled hidden>
+          <Form.Select name="timezone" onChange={updateFormValue} required>
+            <option value="" disabled selected hidden>
               UTC
             </option>
             <option value={-12}>UTC-12</option>
