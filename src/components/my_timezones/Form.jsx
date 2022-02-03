@@ -31,7 +31,10 @@ function MyForm(props) {
     // the browser (don't reload on submit)
     event.preventDefault();
 
-    let localId = 1000 + stateList.length;
+    // Messy hotfix for bad keys.
+    let localId = Math.floor((Math.random() * 10000000) + 1);
+    // let updatedList = stateList.filter((item) => { return localId != buttonId })
+
     formValues.id = localId.toString();
 
     setAndSaveItems([...stateList, formValues]);
