@@ -1,5 +1,5 @@
 import RenderCityDetails from "./RenderCityDetails";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 
 function ReadCityFromParams(props) {
   const { cities, favoriteCities, cityview, town, setTown } = props;
@@ -9,12 +9,12 @@ function ReadCityFromParams(props) {
   //Finding (and setting) city (cityview) from url in cities-list. If not found in cities-list
   // favoriteCities-list is searched.
   //Mounts RenderCityDetails with the foundTown as props if city is found in the list.
-  useEffect(() => findCity(), [cityview]);
+  useEffect(() => findCity());
   let foundTown;
   function findCity() {
-    foundTown = cities.find(x => x.city === cityview.cityview);
+    foundTown = cities.find((x) => x.city === cityview.cityview);
     if (!foundTown) {
-      foundTown = favoriteCities.find(x => x.city === cityview.cityview);
+      foundTown = favoriteCities.find((x) => x.city === cityview.cityview);
       if (!foundTown) {
         cityFound = false;
         return;

@@ -6,11 +6,12 @@ import Col from "react-bootstrap/Col";
 
 function ReadCity(props) {
   let { town } = props;
-  let { id, city, timezone, image, imageBgr } = town;
+  let { city, timezone, image } = town;
   const [time, settime] = useState();
 
   const navigate = useNavigate();
 
+  //The code for the card that prints on the startpage.
   return (
     <Col>
       <Card

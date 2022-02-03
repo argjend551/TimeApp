@@ -1,6 +1,5 @@
 import useStates from "../../js/useStates";
 import Button from "react-bootstrap/Button";
-import store from "../../js/localStore";
 import Form from "react-bootstrap/Form";
 
 function MyForm(props) {
@@ -59,13 +58,14 @@ function MyForm(props) {
           />
         </Form.Group>
         <Form.Group className="mb-3">
-          <Form.Select
+          <Form.Control
+            as="select"
+            value={timezone}
             name="timezone"
             onChange={updateFormValue}
-            value={timezone}
             required
           >
-            <option disabled hidden>
+            <option hidden value={""}>
               UTC
             </option>
             <option value={-12}>UTC-12</option>
@@ -105,7 +105,7 @@ function MyForm(props) {
             <option value={12.75}>UTC+12.45</option>
             <option value={13}>UTC+13</option>
             <option value={14}>UTC+14</option>
-          </Form.Select>
+          </Form.Control>
         </Form.Group>
         <Button type="submit" value="Add" className="add-city-button">
           Add{" "}

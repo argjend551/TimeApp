@@ -1,6 +1,4 @@
-import { useState } from "react";
 import FavoriteItem from "./FavoriteItem";
-import store from "../../js/localStore";
 
 function FavoriteList(props) {
   let { stateList, setAndSaveItems } = props;

@@ -29,15 +29,15 @@ export default function Header(props) {
           <Row>
             <Col>
               <Switch theme={theme} toggleTheme={toggleTheme} />
-            </Col>
+            </Col >
             <Col>
               <div className="AddCityButton">
                 <Button type="button" className="custom-btn" href="/add-city">Add City</Button>
               </div>
             </Col>
-          </Row>
-        </Container>
-      </Navbar>
+          </Row >
+        </Container >
+      </Navbar >
     </>
   );
 }
