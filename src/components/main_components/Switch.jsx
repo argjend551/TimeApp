@@ -4,12 +4,18 @@ import "../../../public/css/switch.css";
 import { Container } from "react-bootstrap";
 import styled, { ThemeProvider } from "styled-components";
 
+
 const StyledApp = styled.div`
     input:checked + .slider:before{
     transform: translateX(${props => props.theme.togglePos} );
-    background-color: ${props => props.theme.body};
+    // background-color: ${props => props.theme.body};
 }
-  `;
+
+.material-icons{
+
+      transform: translateX(${props => props.theme.togglePos} );
+}
+`;
 
 export default function Switch(props) {
   let { theme, toggleTheme } = props;
@@ -21,11 +27,15 @@ export default function Switch(props) {
 
   return (
     <StyledApp>
-      <Container className="darkmodeSwitch">
 
+
+      <Container className="darkmodeSwitch">
         <label className="switch" >
-          <input className="input" type="checkbox" checked={isLight} onChange={handleChange} />
-          <span className="slider"> </span>
+
+          <input className="input" type="checkbox" checked={isLight} onChange={handleChange}></input>
+          <span className="slider">
+            <i className="material-icons" >wb_sunny</i>
+          </span>
         </label>
 
       </Container >

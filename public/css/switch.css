@@ -28,7 +28,7 @@
   background-color: #ccc;
 }
 
-.slider:before {
+/* .slider:before {
   position: absolute;
 
   border-radius: 34px;
@@ -38,8 +38,17 @@
   width: 26px;
   left : 4px;
   bottom: 4px;
-  background-color: white;  
+  background-color: #ccc;  
 
+  transition: 0.4s;
+   pointer-events: none;
+} */
+
+.material-icons{
+  display: inline-block;
+  padding: 4px;
+  pointer-events: none;
+   position: absolute;
   transition: 0.4s;
 }
 

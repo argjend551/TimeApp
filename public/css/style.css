@@ -4,7 +4,7 @@
 @import url("toggle.css");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
 
-main {
+main{
   flex: 1;
 }
 
@@ -87,7 +87,7 @@ default blå färgen .dvs om man bara tar bort den här css stylingen för heade
   overflow-y: scroll;
 }
 
-#root {
+#root > div{
   display: flex;
   min-height: 100vh;
   flex-direction: column;
