@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 
 export default function Footer() {
   return (
-    <Container>
+    <Container fluid>
       <Row>
         <Col>
           <p>Copyright &copy; 2022 TheTimepointCompany</p>
