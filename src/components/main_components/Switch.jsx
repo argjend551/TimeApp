@@ -34,7 +34,7 @@ export default function Switch(props) {
 
           <input className="input" type="checkbox" checked={isLight} onChange={handleChange}></input>
           <span className="slider">
-            <i className="material-icons" selectable={false}>wb_sunny</i>
+            <i className="material-icons" >wb_sunny</i>
           </span>
         </label>
 

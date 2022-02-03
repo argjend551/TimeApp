@@ -26,7 +26,6 @@
   bottom: 0;
 
   background-color: #ccc;
-   pointer-events: none;
 }
 
 /* .slider:before {
@@ -51,7 +50,6 @@
   pointer-events: none;
    position: absolute;
   transition: 0.4s;
-   pointer-events: none;
 }
 
 /* input:checked + .slider:before{
