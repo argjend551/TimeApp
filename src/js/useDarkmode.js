@@ -1,5 +1,3 @@
-//https://css-tricks.com/a-dark-mode-toggle-with-react-and-themeprovider/
-// This really saved me ! / Tim 
 
 import { useEffect, useState } from 'react';
 
